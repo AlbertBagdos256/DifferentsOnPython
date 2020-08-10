@@ -103,7 +103,6 @@ class Displacement():
         print(str(distance) + 'distance')
 
         if distance < 80:
-            print('hello mazaacka')
             print(str(len(healthy_people)) + 'dlina')
             deleteObject(healthy_parametrs[0])
             healthy_people.remove(healthy_parametrs)
@@ -138,5 +137,5 @@ def main():
     onKey(keyPressed)
     onTimer(Update, 8)
     run()
-
-main()
+if __name__ == "__main__":
+    main()
